@@ -4,7 +4,7 @@ import CollectionPreview from'../../components/collection-preview/collection-pre
 
 function ShopPage(props) {
 
-    const [collections, setCollections] = useState(
+    const [collections] = useState(
         SHOP_DATA
     )
     

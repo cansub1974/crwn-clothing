@@ -3,7 +3,7 @@ import './directory.styles.scss';
 import MenuItem from '../menu-item/menu-item.component'
 
 function Directory(props) {
-    const [sections, setSections] = useState(
+    const [sections] = useState(
         [
             {
               title: 'hats',
