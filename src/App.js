@@ -31,7 +31,7 @@ class App extends React.Component {
           })
         });        
       } 
-      this.setState({ currentUser: userAuth })
+      this.setState({ currentUser: userAuth })     
     })
   }
 
@@ -52,45 +52,5 @@ class App extends React.Component {
     );
   };
 }
-
-// function App() {
-//   const [users, setUsers] = useState(
-//     {currentUser: null}
-//   )
-//   let unsubscribeFromAuth = null;
-
-//   useEffect(() => {
-//     unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-//       setUsers( {currentUser: user} )
-//       //console.log(user.displayName);
-      
-//     })
-    
-//   }, []);
-
-//   useEffect(() => {
-//     return () => {
-//       unsubscribeFromAuth()
-//     }
-//   })
-
-
-//     return (
-//       <div>
-//         <Header currentUser={users}/>
-//         <Switch>
-//           <Route exact path="/" component={Homepage} />
-//           <Route path="/shop" component={ShopPage} />
-//           <Route path="/signIn" component={SignInAndSignUpPage} />
-//         </Switch>
-//       </div>
-//     );
-// }
-
-  
-
-
-  
-
 
 export default App;
