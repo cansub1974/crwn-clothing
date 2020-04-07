@@ -20,8 +20,7 @@ function App (){
                     id: snapShot.id,
                     ...snapShot.data()
                      })
-                })
-                 
+                })                
                 } else {
                  setUser(userAuth);
                  console.log(user);
